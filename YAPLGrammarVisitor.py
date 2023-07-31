@@ -139,5 +139,10 @@ class YAPLGrammarVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by YAPLGrammarParser#floatType.
+    def visitFloatType(self, ctx:YAPLGrammarParser.FloatTypeContext):
+        return self.visitChildren(ctx)
+
+
 
 del YAPLGrammarParser

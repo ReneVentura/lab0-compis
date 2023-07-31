@@ -6,12 +6,13 @@ INHERITS: 'inherits';
 LPAREN: '(';
 RPAREN: ')';
 LBRACE: '{';
-MINUS: '-';
 RBRACE: '}';
 COLON: ':';
 SEMICOLON: ';';
 ASSIGN: '<-';
 INT: 'Int';
+BOOL: 'Bool';
+FLOAT: 'Float';
 STRING: 'String';
 SELF: 'self';
 IF: 'if';
@@ -20,6 +21,7 @@ ELSE: 'else';
 LESS_THAN: '<';
 GREAT_THAN: '>';
 EQUALS: '=';
+MINUS: '-';
 PLUS: '+';
 MULT: '*';
 DIV: '/';
@@ -32,6 +34,7 @@ OUT: 'out';
 UNDERSCORE: '_';
 IDENTIFIER: [a-zA-Z_][a-zA-Z0-9_]*;
 INT_LITERAL: [0-9]+;
+FLOAT_LITERAL: [0-9]+ '.' [0-9]+;
 STRING_LITERAL: '"' (~["\r\n] | .)*? {getText().length() <= 100000} '"';
 WS: [ \t\r\n]+ -> skip;
 COMMENT: '(*' .*? '*)' -> skip;
@@ -44,8 +47,9 @@ program: classDeclaration+;
 classDeclaration: CLASS className (INHERITS className)? LBRACE feature* RBRACE SEMICOLON;
 className: IDENTIFIER;
 methodName: IDENTIFIER;
-type : INT | STRING | className | SELF ; 
+type : INT | STRING | BOOL | floatType | className | SELF ; 
 variable:  LET ;
+
 
 parameterCall: expression (COMMA expression)*;  
 primaryExpression: INT_LITERAL | STRING_LITERAL | IDENTIFIER | NEW className | methodName LPAREN parameterCall? RPAREN ;
@@ -73,5 +77,5 @@ parameterList:  formalParameter (COMMA formalParameter)*;
 methodDeclaration: methodName LPAREN parameterList? RPAREN COLON type LBRACE defineStatements RBRACE SEMICOLON;
 feature: statementList | methodDeclaration;
 
-
-
+// Parser rule for FLOAT
+floatType: 'Float';
