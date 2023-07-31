@@ -242,14 +242,5 @@ class YAPLGrammarListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by YAPLGrammarParser#floatType.
-    def enterFloatType(self, ctx:YAPLGrammarParser.FloatTypeContext):
-        pass
-
-    # Exit a parse tree produced by YAPLGrammarParser#floatType.
-    def exitFloatType(self, ctx:YAPLGrammarParser.FloatTypeContext):
-        pass
-
-
 
 del YAPLGrammarParser

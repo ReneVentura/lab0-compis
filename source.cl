@@ -1,5 +1,6 @@
 class Factorial {
   	var: Int <- 0;
+	var2: Bool <- true;
   	
   	factorial(n: Int) : Int {
 		{ 
