@@ -78,17 +78,18 @@ def format_tree(node, indent=""):
         result += format_tree(child, indent + "  ") + "\n"
     return result
 
+def compile(file_path = "source.cl"):
+    # Example usage
+    file_path = "source.cl"
+    tree, symbol_table = parse_code(file_path)
 
-# Example usage
-file_path = "source.cl"
-tree, symbol_table = parse_code(file_path)
+    # Print the tree
+    formatted_tree = format_tree(tree, indent="  ")
+    #print("Árbol de Análisis Sintáctico:")
+    #print(formatted_tree)
 
-# Print the tree
-formatted_tree = format_tree(tree, indent="  ")
-print("Árbol de Análisis Sintáctico:")
-print(formatted_tree)
-
-# Print the symbol table
-print("\nTabla de Símbolos:")
-for symbol_name, symbol_type in symbol_table.items():
-    print(f"{symbol_name}: {symbol_type}")
+    # Print the symbol table
+    print("\nTabla de Símbolos:")
+    for symbol_name, symbol_type in symbol_table.items():
+        print(f"{symbol_name}: {symbol_type}")
+compile()
