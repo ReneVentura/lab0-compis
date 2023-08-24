@@ -1,8 +1,43 @@
 import React from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import bg from '../assets/img/Bg.jpg';
+import axios from "axios";
+
+import { useEffect } from 'react';
+
 
 const Home = () => {
+    const [inputText, setInputText] = useState("");
+
+    function handleInputChange(event) {
+        setInputText(event.target.value);
+    }
+
+    
+  function getData() {
+    axios({
+      method: "POST",
+      url:"/tree",
+      data: { text: inputText }
+    })
+    .then((response) => {
+      const res =response.data
+      console.log(res)
+    }).catch((error) => {
+      if (error.response) {
+        console.log(error.response)
+        }
+    })}
+
+    useEffect(() => {
+        getData();
+    }, []);
+
+
+
+
+
+
     const backgroundImage = bg;
 
     return (
@@ -38,11 +73,16 @@ const Home = () => {
 
 
                         <div className='mt-36 w-11/12 bg-gray-400 h-screen pb-10 flex flex-col items-center justify-center'>
-                            <textarea  className='bg-white mt-20 w-10/12 h-5/6 p-5 font-text'>
+                            <textarea  className='bg-white mt-20 w-10/12 h-5/6 p-5 font-text'
+                            value={inputText}
+                            onChange={handleInputChange}
+                            >
                                 
                             </textarea >
 
-                            <button className='bg-white mt-5 w-1/6 font-text border border-white'>
+                            <button className='bg-white mt-5 w-1/6 font-text border border-white'
+                            onClick={postData}
+                            >
                                  Evaluar                          
                             </button>
 
