@@ -54,9 +54,8 @@ class SemanticAnalyzerVisitor(YAPLGrammarVisitor):
             return f"new {class_name}"
         # Add other cases for NEW, method calls, etc.
 
-def parse_code(file_path):
-    with open(file_path, "r") as file:
-        code = file.read()
+def parse_code(code):
+    
 
     lexer = YAPLGrammarLexer(InputStream(code))
     stream = CommonTokenStream(lexer)
@@ -78,18 +77,19 @@ def format_tree(node, indent=""):
         result += format_tree(child, indent + "  ") + "\n"
     return result
 
-def compile(file_path = "source.cl"):
+def compile(code):
     # Example usage
-    file_path = "source.cl"
-    tree, symbol_table = parse_code(file_path)
+    
+    tree, symbol_table = parse_code(code)
 
     # Print the tree
     formatted_tree = format_tree(tree, indent="  ")
     #print("Árbol de Análisis Sintáctico:")
     #print(formatted_tree)
-
+    result = []
     # Print the symbol table
     print("\nTabla de Símbolos:")
     for symbol_name, symbol_type in symbol_table.items():
         print(f"{symbol_name}: {symbol_type}")
-compile()
+        result.append(symbol_name + ":" + symbol_type)
+    return formatted_tree, result

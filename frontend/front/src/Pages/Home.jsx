@@ -1,10 +1,49 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import bg from '../assets/img/Bg.jpg';
+import axios from 'axios'
 
 const Home = () => {
     const backgroundImage = bg;
+    const [inputText, setInputText] = useState("");
 
+    function handleInputChange(event) {
+        setInputText(event.target.value);
+    }
+    function postData() {
+        axios({
+          method: "POST",
+          url:"http://127.0.0.1:5000/getcode",
+          data: { text: inputText }
+        })
+        .then((response) => {
+          const res =response.data
+          console.log(res)
+          setInputText(JSON.stringify(res));
+        }).catch((error) => {
+          if (error.response) {
+            console.log(error.response)
+            }
+        })}
+        function getData() {
+            axios({
+              method: "GET",
+              url:"http://127.0.0.1:5000/getcode",
+        
+            })
+            .then((response) => {
+              const res =response.data
+              console.log(res)
+            }).catch((error) => {
+              if (error.response) {
+                console.log(error.response)
+                }
+            })}
+        
+           
+    
+        
     return (
         <div>
             <Parallax pages={2}>
@@ -38,14 +77,24 @@ const Home = () => {
 
 
                         <div className='mt-36 w-11/12 bg-gray-400 h-screen pb-10 flex flex-col items-center justify-center'>
-                            <textarea  className='bg-white mt-20 w-10/12 h-5/6 p-5 font-text'>
-                                
+                        <textarea  className='bg-white mt-20 w-10/12 h-5/6 p-5 font-text'
+                            value={inputText}
+                            onChange={handleInputChange}
+                            style={{ fontVariantLigatures: 'none' }}
+                            >
+
                             </textarea >
 
-                            <button className='bg-white mt-5 w-1/6 font-text border border-white'>
-                                 Evaluar                          
+                            <button className='bg-white mt-5 w-1/6 font-text border border-white'
+                            onClick={postData}
+                            >
+                                 Evaluar
                             </button>
-
+                            <button className='bg-white mt-5 w-1/6 font-text border border-white'
+                            onClick={getData}
+                            >
+                                 Probar
+                            </button>
                         </div>
 
 
