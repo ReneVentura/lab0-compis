@@ -5,6 +5,13 @@ import bg from '../assets/img/Bg.jpg';
 import axios from 'axios'
 
 const Home = () => {
+    
+
+
+
+
+
+
     const backgroundImage = bg;
     const [inputText, setInputText] = useState("");
 
