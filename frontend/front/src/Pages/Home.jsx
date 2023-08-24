@@ -27,7 +27,7 @@ const Home = () => {
                             <br></br>
                            <strong> Diego Crespo 19541 </strong>
                             <br></br>
-                           <strong> Rene Ventura 19  </strong>
+                           <strong> Rene Ventura 19554  </strong>
                         </h1>
                     </div>
 
