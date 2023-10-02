@@ -6,7 +6,7 @@ import sys
  
 
 sys.path.insert(1, './compiler')
-from symbol_table import compile
+from symbol_table import *
 app = Flask(__name__)
 app.secret_key = "your_secret_key"  # Change this to a secure secret key
 CORS(app)
