@@ -6,12 +6,12 @@ INHERITS: 'inherits';
 LPAREN: '(';
 RPAREN: ')';
 LBRACE: '{';
-MINUS: '-';
 RBRACE: '}';
 COLON: ':';
 SEMICOLON: ';';
 ASSIGN: '<-';
 INT: 'Int';
+BOOL: 'Bool';
 STRING: 'String';
 SELF: 'self';
 IF: 'if';
@@ -20,6 +20,7 @@ ELSE: 'else';
 LESS_THAN: '<';
 GREAT_THAN: '>';
 EQUALS: '=';
+MINUS: '-';
 PLUS: '+';
 MULT: '*';
 DIV: '/';
@@ -29,55 +30,68 @@ IN: 'in';
 DOT: '.';
 LET: 'let';
 OUT: 'out';
+//BOOL: 'Bool';
+OBJECT: 'Object'; // Fixed typo: changed OBJETCT to OBJECT
+TRUE: 'true';
+FALSE: 'false';
 UNDERSCORE: '_';
+FI: 'fi';
 IDENTIFIER: [a-zA-Z_][a-zA-Z0-9_]*;
 INT_LITERAL: [0-9]+;
-STRING_LITERAL: '"' (~["\r\n] | .)*? {getText().length() <= 100000} '"';
+STRING_LITERAL: '"' (~["\r\n] | .)*? '"';
 WS: [ \t\r\n]+ -> skip;
-COMMENT: '(*' .*? '*)' -> skip;
+COMMENT
+    : '(*' .*? '*)' -> skip
+;
+
+LINE_COMMENT
+    : '--' ~[\r\n]* -> skip
+;
 ERROR: .;
 
 fragment ESC: '\\' ["\\/bfnrt];
 
 // Parser rules
 program: classDeclaration+;
-classDeclaration: CLASS className (INHERITS className)? LBRACE feature* RBRACE SEMICOLON;
+classDeclaration: CLASS className (INHERITS classNameParent)? LBRACE feature* RBRACE SEMICOLON;
 className: IDENTIFIER;
+classNameParent: IDENTIFIER;
 methodName: IDENTIFIER;
-
 type: INT {size = 32}
     | STRING {size = 64}
     | className {size = 64}
-    | SELF {size = 64};
-
-functionDeclaration: methodName LPAREN parameterList? RPAREN COLON type LBRACE defineStatements RBRACE SEMICOLON;
-
-
+    | SELF {size = 64}
+    | BOOL {size = 1}
+    | OBJECT {size = 64};
 variable:  LET ;
 
-parameterCall: expression (COMMA expression)*;
-primaryExpression: INT_LITERAL | STRING_LITERAL | IDENTIFIER | NEW className | methodName LPAREN parameterCall? RPAREN ;
 
-expression: primaryExpression | arithmeticExpression | methodCall;
+parameterCall: expression (COMMA expression)*;  
+primaryExpression: boolDeclaration |INT_LITERAL | STRING_LITERAL | IDENTIFIER | NEW className | methodName LPAREN parameterCall? RPAREN | SELF;
+boolDeclaration: TRUE | FALSE;
+expression: primaryExpression | arithmeticExpression | methodCall | uniqueMethod;
 arithmeticExpression: primaryExpression (MINUS | MULT | PLUS | DIV) primaryExpression;
-boolExpression: primaryExpression (EQUALS | LESS_THAN | GREAT_THAN) primaryExpression;
+boolExpression: primaryExpression (EQUALS | LESS_THAN | GREAT_THAN ) primaryExpression;
 assignExpression: ASSIGN expression;
-
-declaration: LET? IDENTIFIER COLON type;
+uniqueMethod: methodName LPAREN RPAREN; 
+declaration: LET? IDENTIFIER COLON type ;
 newVarDeclaration: declaration (assignExpression)? SEMICOLON?;
 varDeclaration: IDENTIFIER assignExpression SEMICOLON?;
-letDeclaration: LET declaration IN;
+letDeclaration: LET declaration IN statementList; // Fixed letDeclaration rule
 methodCall: IDENTIFIER DOT primaryExpression;
-
-statement: assignStatement | expression;
+statement: (assignStatement | expression) SEMICOLON?; 
 assignStatement: newVarDeclaration | varDeclaration ;
-ifStatement: letDeclaration IF boolExpression THEN statement (ELSE IF boolExpression THEN statement)* (ELSE statement)?;
-statementList: statement | ifStatement;
-defineStatements: LBRACE statementList+ RBRACE;
+ifStatement: LET? IF boolExpression THEN statement (ELSE IF boolExpression THEN LBRACE? statement RBRACE?)* (ELSE  LBRACE? statement RBRACE?)? FI* SEMICOLON?; // Fixed ifStatement rule
+statementList: statement | ifStatement |letExpression;
+letExpression: LPAREN LET declaration IN (LBRACE statement RBRACE SEMICOLON)? RPAREN; 
+defineStatements: LBRACE? statementList+ RBRACE?;
+
+
 
 formalParameter: declaration;
-parameterList: formalParameter (COMMA formalParameter)*;
+parameterList:  formalParameter (COMMA formalParameter)*;
 methodDeclaration: methodName LPAREN parameterList? RPAREN COLON type LBRACE defineStatements RBRACE SEMICOLON;
+
 feature: statementList | methodDeclaration;
 
 // Reglas para código de tres direcciones
