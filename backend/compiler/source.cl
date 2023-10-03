@@ -1,7 +1,7 @@
 class Factorial {
-  	var: Int <- 0;
+  	var: String <- hola;
   	
-  	factorial(n: Int) : Int {
+  	factorial(n: String) : String {
 		{ 
 			let f : Int in
 				if n=0 then 

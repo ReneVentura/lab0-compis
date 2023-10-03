@@ -24,6 +24,11 @@ class YAPLGrammarVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by YAPLGrammarParser#classNameParent.
+    def visitClassNameParent(self, ctx:YAPLGrammarParser.ClassNameParentContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by YAPLGrammarParser#methodName.
     def visitMethodName(self, ctx:YAPLGrammarParser.MethodNameContext):
         return self.visitChildren(ctx)
@@ -49,6 +54,11 @@ class YAPLGrammarVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by YAPLGrammarParser#boolDeclaration.
+    def visitBoolDeclaration(self, ctx:YAPLGrammarParser.BoolDeclarationContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by YAPLGrammarParser#expression.
     def visitExpression(self, ctx:YAPLGrammarParser.ExpressionContext):
         return self.visitChildren(ctx)
@@ -66,6 +76,11 @@ class YAPLGrammarVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by YAPLGrammarParser#assignExpression.
     def visitAssignExpression(self, ctx:YAPLGrammarParser.AssignExpressionContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by YAPLGrammarParser#uniqueMethod.
+    def visitUniqueMethod(self, ctx:YAPLGrammarParser.UniqueMethodContext):
         return self.visitChildren(ctx)
 
 
@@ -111,6 +126,11 @@ class YAPLGrammarVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by YAPLGrammarParser#statementList.
     def visitStatementList(self, ctx:YAPLGrammarParser.StatementListContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by YAPLGrammarParser#letExpression.
+    def visitLetExpression(self, ctx:YAPLGrammarParser.LetExpressionContext):
         return self.visitChildren(ctx)
 
 

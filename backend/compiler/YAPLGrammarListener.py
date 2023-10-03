@@ -35,6 +35,15 @@ class YAPLGrammarListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by YAPLGrammarParser#classNameParent.
+    def enterClassNameParent(self, ctx:YAPLGrammarParser.ClassNameParentContext):
+        pass
+
+    # Exit a parse tree produced by YAPLGrammarParser#classNameParent.
+    def exitClassNameParent(self, ctx:YAPLGrammarParser.ClassNameParentContext):
+        pass
+
+
     # Enter a parse tree produced by YAPLGrammarParser#methodName.
     def enterMethodName(self, ctx:YAPLGrammarParser.MethodNameContext):
         pass
@@ -80,6 +89,15 @@ class YAPLGrammarListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by YAPLGrammarParser#boolDeclaration.
+    def enterBoolDeclaration(self, ctx:YAPLGrammarParser.BoolDeclarationContext):
+        pass
+
+    # Exit a parse tree produced by YAPLGrammarParser#boolDeclaration.
+    def exitBoolDeclaration(self, ctx:YAPLGrammarParser.BoolDeclarationContext):
+        pass
+
+
     # Enter a parse tree produced by YAPLGrammarParser#expression.
     def enterExpression(self, ctx:YAPLGrammarParser.ExpressionContext):
         pass
@@ -113,6 +131,15 @@ class YAPLGrammarListener(ParseTreeListener):
 
     # Exit a parse tree produced by YAPLGrammarParser#assignExpression.
     def exitAssignExpression(self, ctx:YAPLGrammarParser.AssignExpressionContext):
+        pass
+
+
+    # Enter a parse tree produced by YAPLGrammarParser#uniqueMethod.
+    def enterUniqueMethod(self, ctx:YAPLGrammarParser.UniqueMethodContext):
+        pass
+
+    # Exit a parse tree produced by YAPLGrammarParser#uniqueMethod.
+    def exitUniqueMethod(self, ctx:YAPLGrammarParser.UniqueMethodContext):
         pass
 
 
@@ -194,6 +221,15 @@ class YAPLGrammarListener(ParseTreeListener):
 
     # Exit a parse tree produced by YAPLGrammarParser#statementList.
     def exitStatementList(self, ctx:YAPLGrammarParser.StatementListContext):
+        pass
+
+
+    # Enter a parse tree produced by YAPLGrammarParser#letExpression.
+    def enterLetExpression(self, ctx:YAPLGrammarParser.LetExpressionContext):
+        pass
+
+    # Exit a parse tree produced by YAPLGrammarParser#letExpression.
+    def exitLetExpression(self, ctx:YAPLGrammarParser.LetExpressionContext):
         pass
 
 
