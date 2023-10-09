@@ -10,105 +10,112 @@ else:
 
 def serializedATN():
     return [
-        4,1,42,282,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,42,299,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,20,
         7,20,2,21,7,21,2,22,7,22,2,23,7,23,2,24,7,24,2,25,7,25,2,26,7,26,
-        2,27,7,27,2,28,7,28,2,29,7,29,1,0,4,0,62,8,0,11,0,12,0,63,1,1,1,
-        1,1,1,1,1,3,1,70,8,1,1,1,1,1,5,1,74,8,1,10,1,12,1,77,9,1,1,1,1,1,
-        1,1,1,2,1,2,1,3,1,3,1,4,1,4,1,5,1,5,1,5,1,5,1,5,1,5,3,5,94,8,5,1,
-        6,1,6,1,7,1,7,1,7,5,7,101,8,7,10,7,12,7,104,9,7,1,8,1,8,1,8,1,8,
-        1,8,1,8,1,8,1,8,1,8,3,8,115,8,8,1,8,1,8,1,8,3,8,120,8,8,1,9,1,9,
-        1,10,1,10,1,10,1,10,3,10,128,8,10,1,11,1,11,1,11,1,11,1,12,1,12,
-        1,12,1,12,1,13,1,13,1,13,1,14,1,14,1,14,1,14,1,15,3,15,146,8,15,
-        1,15,1,15,1,15,1,15,1,16,1,16,3,16,154,8,16,1,16,3,16,157,8,16,1,
-        17,1,17,1,17,3,17,162,8,17,1,18,1,18,1,18,1,18,1,18,1,19,1,19,1,
-        19,1,19,1,20,1,20,3,20,175,8,20,1,20,3,20,178,8,20,1,21,1,21,3,21,
-        182,8,21,1,22,3,22,185,8,22,1,22,1,22,1,22,1,22,1,22,1,22,1,22,1,
-        22,1,22,3,22,196,8,22,1,22,1,22,3,22,200,8,22,5,22,202,8,22,10,22,
-        12,22,205,9,22,1,22,1,22,3,22,209,8,22,1,22,1,22,3,22,213,8,22,3,
-        22,215,8,22,1,22,5,22,218,8,22,10,22,12,22,221,9,22,1,22,3,22,224,
-        8,22,1,23,1,23,1,23,3,23,229,8,23,1,24,1,24,1,24,1,24,1,24,1,24,
-        1,24,1,24,1,24,3,24,240,8,24,1,24,1,24,1,25,3,25,245,8,25,1,25,4,
-        25,248,8,25,11,25,12,25,249,1,25,3,25,253,8,25,1,26,1,26,1,27,1,
-        27,1,27,5,27,260,8,27,10,27,12,27,263,9,27,1,28,1,28,1,28,3,28,268,
-        8,28,1,28,1,28,1,28,1,28,1,28,1,28,1,28,1,28,1,29,1,29,3,29,280,
-        8,29,1,29,0,0,30,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,
-        36,38,40,42,44,46,48,50,52,54,56,58,0,3,1,0,31,32,1,0,20,23,1,0,
-        17,19,295,0,61,1,0,0,0,2,65,1,0,0,0,4,81,1,0,0,0,6,83,1,0,0,0,8,
-        85,1,0,0,0,10,93,1,0,0,0,12,95,1,0,0,0,14,97,1,0,0,0,16,119,1,0,
-        0,0,18,121,1,0,0,0,20,127,1,0,0,0,22,129,1,0,0,0,24,133,1,0,0,0,
-        26,137,1,0,0,0,28,140,1,0,0,0,30,145,1,0,0,0,32,151,1,0,0,0,34,158,
-        1,0,0,0,36,163,1,0,0,0,38,168,1,0,0,0,40,174,1,0,0,0,42,181,1,0,
-        0,0,44,184,1,0,0,0,46,228,1,0,0,0,48,230,1,0,0,0,50,244,1,0,0,0,
-        52,254,1,0,0,0,54,256,1,0,0,0,56,264,1,0,0,0,58,279,1,0,0,0,60,62,
-        3,2,1,0,61,60,1,0,0,0,62,63,1,0,0,0,63,61,1,0,0,0,63,64,1,0,0,0,
-        64,1,1,0,0,0,65,66,5,1,0,0,66,69,3,4,2,0,67,68,5,2,0,0,68,70,3,6,
-        3,0,69,67,1,0,0,0,69,70,1,0,0,0,70,71,1,0,0,0,71,75,5,5,0,0,72,74,
-        3,58,29,0,73,72,1,0,0,0,74,77,1,0,0,0,75,73,1,0,0,0,75,76,1,0,0,
-        0,76,78,1,0,0,0,77,75,1,0,0,0,78,79,5,6,0,0,79,80,5,8,0,0,80,3,1,
-        0,0,0,81,82,5,35,0,0,82,5,1,0,0,0,83,84,5,35,0,0,84,7,1,0,0,0,85,
-        86,5,35,0,0,86,9,1,0,0,0,87,94,5,10,0,0,88,94,5,12,0,0,89,94,3,4,
-        2,0,90,94,5,13,0,0,91,94,5,11,0,0,92,94,5,30,0,0,93,87,1,0,0,0,93,
-        88,1,0,0,0,93,89,1,0,0,0,93,90,1,0,0,0,93,91,1,0,0,0,93,92,1,0,0,
-        0,94,11,1,0,0,0,95,96,5,28,0,0,96,13,1,0,0,0,97,102,3,20,10,0,98,
-        99,5,25,0,0,99,101,3,20,10,0,100,98,1,0,0,0,101,104,1,0,0,0,102,
-        100,1,0,0,0,102,103,1,0,0,0,103,15,1,0,0,0,104,102,1,0,0,0,105,120,
-        3,18,9,0,106,120,5,36,0,0,107,120,5,37,0,0,108,120,5,35,0,0,109,
-        110,5,24,0,0,110,120,3,4,2,0,111,112,3,8,4,0,112,114,5,3,0,0,113,
-        115,3,14,7,0,114,113,1,0,0,0,114,115,1,0,0,0,115,116,1,0,0,0,116,
-        117,5,4,0,0,117,120,1,0,0,0,118,120,5,13,0,0,119,105,1,0,0,0,119,
-        106,1,0,0,0,119,107,1,0,0,0,119,108,1,0,0,0,119,109,1,0,0,0,119,
-        111,1,0,0,0,119,118,1,0,0,0,120,17,1,0,0,0,121,122,7,0,0,0,122,19,
-        1,0,0,0,123,128,3,16,8,0,124,128,3,22,11,0,125,128,3,38,19,0,126,
-        128,3,28,14,0,127,123,1,0,0,0,127,124,1,0,0,0,127,125,1,0,0,0,127,
-        126,1,0,0,0,128,21,1,0,0,0,129,130,3,16,8,0,130,131,7,1,0,0,131,
-        132,3,16,8,0,132,23,1,0,0,0,133,134,3,16,8,0,134,135,7,2,0,0,135,
-        136,3,16,8,0,136,25,1,0,0,0,137,138,5,9,0,0,138,139,3,20,10,0,139,
-        27,1,0,0,0,140,141,3,8,4,0,141,142,5,3,0,0,142,143,5,4,0,0,143,29,
-        1,0,0,0,144,146,5,28,0,0,145,144,1,0,0,0,145,146,1,0,0,0,146,147,
-        1,0,0,0,147,148,5,35,0,0,148,149,5,7,0,0,149,150,3,10,5,0,150,31,
-        1,0,0,0,151,153,3,30,15,0,152,154,3,26,13,0,153,152,1,0,0,0,153,
-        154,1,0,0,0,154,156,1,0,0,0,155,157,5,8,0,0,156,155,1,0,0,0,156,
-        157,1,0,0,0,157,33,1,0,0,0,158,159,5,35,0,0,159,161,3,26,13,0,160,
-        162,5,8,0,0,161,160,1,0,0,0,161,162,1,0,0,0,162,35,1,0,0,0,163,164,
-        5,28,0,0,164,165,3,30,15,0,165,166,5,26,0,0,166,167,3,46,23,0,167,
-        37,1,0,0,0,168,169,5,35,0,0,169,170,5,27,0,0,170,171,3,16,8,0,171,
-        39,1,0,0,0,172,175,3,42,21,0,173,175,3,20,10,0,174,172,1,0,0,0,174,
-        173,1,0,0,0,175,177,1,0,0,0,176,178,5,8,0,0,177,176,1,0,0,0,177,
-        178,1,0,0,0,178,41,1,0,0,0,179,182,3,32,16,0,180,182,3,34,17,0,181,
-        179,1,0,0,0,181,180,1,0,0,0,182,43,1,0,0,0,183,185,5,28,0,0,184,
-        183,1,0,0,0,184,185,1,0,0,0,185,186,1,0,0,0,186,187,5,14,0,0,187,
-        188,3,24,12,0,188,189,5,15,0,0,189,203,3,40,20,0,190,191,5,16,0,
-        0,191,192,5,14,0,0,192,193,3,24,12,0,193,195,5,15,0,0,194,196,5,
-        5,0,0,195,194,1,0,0,0,195,196,1,0,0,0,196,197,1,0,0,0,197,199,3,
-        40,20,0,198,200,5,6,0,0,199,198,1,0,0,0,199,200,1,0,0,0,200,202,
-        1,0,0,0,201,190,1,0,0,0,202,205,1,0,0,0,203,201,1,0,0,0,203,204,
-        1,0,0,0,204,214,1,0,0,0,205,203,1,0,0,0,206,208,5,16,0,0,207,209,
-        5,5,0,0,208,207,1,0,0,0,208,209,1,0,0,0,209,210,1,0,0,0,210,212,
-        3,40,20,0,211,213,5,6,0,0,212,211,1,0,0,0,212,213,1,0,0,0,213,215,
-        1,0,0,0,214,206,1,0,0,0,214,215,1,0,0,0,215,219,1,0,0,0,216,218,
-        5,34,0,0,217,216,1,0,0,0,218,221,1,0,0,0,219,217,1,0,0,0,219,220,
-        1,0,0,0,220,223,1,0,0,0,221,219,1,0,0,0,222,224,5,8,0,0,223,222,
-        1,0,0,0,223,224,1,0,0,0,224,45,1,0,0,0,225,229,3,40,20,0,226,229,
-        3,44,22,0,227,229,3,48,24,0,228,225,1,0,0,0,228,226,1,0,0,0,228,
-        227,1,0,0,0,229,47,1,0,0,0,230,231,5,3,0,0,231,232,5,28,0,0,232,
-        233,3,30,15,0,233,239,5,26,0,0,234,235,5,5,0,0,235,236,3,40,20,0,
-        236,237,5,6,0,0,237,238,5,8,0,0,238,240,1,0,0,0,239,234,1,0,0,0,
-        239,240,1,0,0,0,240,241,1,0,0,0,241,242,5,4,0,0,242,49,1,0,0,0,243,
-        245,5,5,0,0,244,243,1,0,0,0,244,245,1,0,0,0,245,247,1,0,0,0,246,
-        248,3,46,23,0,247,246,1,0,0,0,248,249,1,0,0,0,249,247,1,0,0,0,249,
-        250,1,0,0,0,250,252,1,0,0,0,251,253,5,6,0,0,252,251,1,0,0,0,252,
-        253,1,0,0,0,253,51,1,0,0,0,254,255,3,30,15,0,255,53,1,0,0,0,256,
-        261,3,52,26,0,257,258,5,25,0,0,258,260,3,52,26,0,259,257,1,0,0,0,
-        260,263,1,0,0,0,261,259,1,0,0,0,261,262,1,0,0,0,262,55,1,0,0,0,263,
-        261,1,0,0,0,264,265,3,8,4,0,265,267,5,3,0,0,266,268,3,54,27,0,267,
-        266,1,0,0,0,267,268,1,0,0,0,268,269,1,0,0,0,269,270,5,4,0,0,270,
-        271,5,7,0,0,271,272,3,10,5,0,272,273,5,5,0,0,273,274,3,50,25,0,274,
-        275,5,6,0,0,275,276,5,8,0,0,276,57,1,0,0,0,277,280,3,46,23,0,278,
-        280,3,56,28,0,279,277,1,0,0,0,279,278,1,0,0,0,280,59,1,0,0,0,32,
-        63,69,75,93,102,114,119,127,145,153,156,161,174,177,181,184,195,
-        199,203,208,212,214,219,223,228,239,244,249,252,261,267,279
+        2,27,7,27,2,28,7,28,2,29,7,29,2,30,7,30,1,0,4,0,64,8,0,11,0,12,0,
+        65,1,1,1,1,1,1,1,1,3,1,72,8,1,1,1,1,1,5,1,76,8,1,10,1,12,1,79,9,
+        1,1,1,1,1,1,1,1,2,1,2,1,3,1,3,1,4,1,4,1,5,1,5,1,5,1,5,1,5,1,5,3,
+        5,96,8,5,1,6,1,6,1,7,1,7,1,8,1,8,1,8,5,8,105,8,8,10,8,12,8,108,9,
+        8,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,1,9,3,9,119,8,9,1,9,1,9,1,9,3,
+        9,124,8,9,1,10,1,10,1,11,1,11,1,11,1,11,1,11,3,11,133,8,11,1,12,
+        1,12,1,12,1,12,1,12,1,12,1,12,1,12,1,12,5,12,144,8,12,10,12,12,12,
+        147,9,12,1,13,1,13,1,13,1,13,1,14,1,14,1,14,1,15,1,15,1,15,1,15,
+        1,16,3,16,161,8,16,1,16,1,16,1,16,1,16,1,17,3,17,168,8,17,1,17,1,
+        17,1,17,1,17,3,17,174,8,17,1,17,3,17,177,8,17,1,18,1,18,1,18,3,18,
+        182,8,18,1,19,1,19,1,19,1,19,1,19,1,20,1,20,1,20,1,20,1,21,1,21,
+        3,21,195,8,21,1,22,1,22,3,22,199,8,22,1,23,3,23,202,8,23,1,23,1,
+        23,1,23,1,23,1,23,1,23,1,23,1,23,1,23,3,23,213,8,23,1,23,1,23,3,
+        23,217,8,23,5,23,219,8,23,10,23,12,23,222,9,23,1,23,1,23,3,23,226,
+        8,23,1,23,1,23,3,23,230,8,23,3,23,232,8,23,1,23,5,23,235,8,23,10,
+        23,12,23,238,9,23,1,23,3,23,241,8,23,1,24,1,24,1,24,3,24,246,8,24,
+        1,25,1,25,1,25,1,25,1,25,1,25,1,25,1,25,1,25,3,25,257,8,25,1,25,
+        1,25,1,26,3,26,262,8,26,1,26,4,26,265,8,26,11,26,12,26,266,1,26,
+        3,26,270,8,26,1,27,1,27,1,28,1,28,1,28,5,28,277,8,28,10,28,12,28,
+        280,9,28,1,29,1,29,1,29,3,29,285,8,29,1,29,1,29,1,29,1,29,1,29,1,
+        29,1,29,1,29,1,30,1,30,3,30,297,8,30,1,30,0,0,31,0,2,4,6,8,10,12,
+        14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,
+        58,60,0,3,1,0,20,23,1,0,31,32,1,0,17,19,316,0,63,1,0,0,0,2,67,1,
+        0,0,0,4,83,1,0,0,0,6,85,1,0,0,0,8,87,1,0,0,0,10,95,1,0,0,0,12,97,
+        1,0,0,0,14,99,1,0,0,0,16,101,1,0,0,0,18,123,1,0,0,0,20,125,1,0,0,
+        0,22,132,1,0,0,0,24,134,1,0,0,0,26,148,1,0,0,0,28,152,1,0,0,0,30,
+        155,1,0,0,0,32,160,1,0,0,0,34,167,1,0,0,0,36,178,1,0,0,0,38,183,
+        1,0,0,0,40,188,1,0,0,0,42,192,1,0,0,0,44,198,1,0,0,0,46,201,1,0,
+        0,0,48,245,1,0,0,0,50,247,1,0,0,0,52,261,1,0,0,0,54,271,1,0,0,0,
+        56,273,1,0,0,0,58,281,1,0,0,0,60,296,1,0,0,0,62,64,3,2,1,0,63,62,
+        1,0,0,0,64,65,1,0,0,0,65,63,1,0,0,0,65,66,1,0,0,0,66,1,1,0,0,0,67,
+        68,5,1,0,0,68,71,3,4,2,0,69,70,5,2,0,0,70,72,3,6,3,0,71,69,1,0,0,
+        0,71,72,1,0,0,0,72,73,1,0,0,0,73,77,5,5,0,0,74,76,3,60,30,0,75,74,
+        1,0,0,0,76,79,1,0,0,0,77,75,1,0,0,0,77,78,1,0,0,0,78,80,1,0,0,0,
+        79,77,1,0,0,0,80,81,5,6,0,0,81,82,5,8,0,0,82,3,1,0,0,0,83,84,5,35,
+        0,0,84,5,1,0,0,0,85,86,5,35,0,0,86,7,1,0,0,0,87,88,5,35,0,0,88,9,
+        1,0,0,0,89,96,5,10,0,0,90,96,5,12,0,0,91,96,3,4,2,0,92,96,5,13,0,
+        0,93,96,5,11,0,0,94,96,5,30,0,0,95,89,1,0,0,0,95,90,1,0,0,0,95,91,
+        1,0,0,0,95,92,1,0,0,0,95,93,1,0,0,0,95,94,1,0,0,0,96,11,1,0,0,0,
+        97,98,5,28,0,0,98,13,1,0,0,0,99,100,7,0,0,0,100,15,1,0,0,0,101,106,
+        3,22,11,0,102,103,5,25,0,0,103,105,3,22,11,0,104,102,1,0,0,0,105,
+        108,1,0,0,0,106,104,1,0,0,0,106,107,1,0,0,0,107,17,1,0,0,0,108,106,
+        1,0,0,0,109,124,3,20,10,0,110,124,5,36,0,0,111,124,5,37,0,0,112,
+        124,5,35,0,0,113,114,5,24,0,0,114,124,3,4,2,0,115,116,3,8,4,0,116,
+        118,5,3,0,0,117,119,3,16,8,0,118,117,1,0,0,0,118,119,1,0,0,0,119,
+        120,1,0,0,0,120,121,5,4,0,0,121,124,1,0,0,0,122,124,5,13,0,0,123,
+        109,1,0,0,0,123,110,1,0,0,0,123,111,1,0,0,0,123,112,1,0,0,0,123,
+        113,1,0,0,0,123,115,1,0,0,0,123,122,1,0,0,0,124,19,1,0,0,0,125,126,
+        7,1,0,0,126,21,1,0,0,0,127,133,3,18,9,0,128,133,3,24,12,0,129,133,
+        3,40,20,0,130,133,3,30,15,0,131,133,3,44,22,0,132,127,1,0,0,0,132,
+        128,1,0,0,0,132,129,1,0,0,0,132,130,1,0,0,0,132,131,1,0,0,0,133,
+        23,1,0,0,0,134,145,3,18,9,0,135,136,5,20,0,0,136,144,3,18,9,0,137,
+        138,5,22,0,0,138,144,3,18,9,0,139,140,5,21,0,0,140,144,3,18,9,0,
+        141,142,5,23,0,0,142,144,3,18,9,0,143,135,1,0,0,0,143,137,1,0,0,
+        0,143,139,1,0,0,0,143,141,1,0,0,0,144,147,1,0,0,0,145,143,1,0,0,
+        0,145,146,1,0,0,0,146,25,1,0,0,0,147,145,1,0,0,0,148,149,3,18,9,
+        0,149,150,7,2,0,0,150,151,3,18,9,0,151,27,1,0,0,0,152,153,5,9,0,
+        0,153,154,3,22,11,0,154,29,1,0,0,0,155,156,3,8,4,0,156,157,5,3,0,
+        0,157,158,5,4,0,0,158,31,1,0,0,0,159,161,5,28,0,0,160,159,1,0,0,
+        0,160,161,1,0,0,0,161,162,1,0,0,0,162,163,5,35,0,0,163,164,5,7,0,
+        0,164,165,3,10,5,0,165,33,1,0,0,0,166,168,5,28,0,0,167,166,1,0,0,
+        0,167,168,1,0,0,0,168,169,1,0,0,0,169,170,5,35,0,0,170,171,5,7,0,
+        0,171,173,3,10,5,0,172,174,3,28,14,0,173,172,1,0,0,0,173,174,1,0,
+        0,0,174,176,1,0,0,0,175,177,5,8,0,0,176,175,1,0,0,0,176,177,1,0,
+        0,0,177,35,1,0,0,0,178,179,5,35,0,0,179,181,3,28,14,0,180,182,5,
+        8,0,0,181,180,1,0,0,0,181,182,1,0,0,0,182,37,1,0,0,0,183,184,5,28,
+        0,0,184,185,3,32,16,0,185,186,5,26,0,0,186,187,3,48,24,0,187,39,
+        1,0,0,0,188,189,5,35,0,0,189,190,5,27,0,0,190,191,3,18,9,0,191,41,
+        1,0,0,0,192,194,3,22,11,0,193,195,5,8,0,0,194,193,1,0,0,0,194,195,
+        1,0,0,0,195,43,1,0,0,0,196,199,3,34,17,0,197,199,3,36,18,0,198,196,
+        1,0,0,0,198,197,1,0,0,0,199,45,1,0,0,0,200,202,5,28,0,0,201,200,
+        1,0,0,0,201,202,1,0,0,0,202,203,1,0,0,0,203,204,5,14,0,0,204,205,
+        3,26,13,0,205,206,5,15,0,0,206,220,3,42,21,0,207,208,5,16,0,0,208,
+        209,5,14,0,0,209,210,3,26,13,0,210,212,5,15,0,0,211,213,5,5,0,0,
+        212,211,1,0,0,0,212,213,1,0,0,0,213,214,1,0,0,0,214,216,3,42,21,
+        0,215,217,5,6,0,0,216,215,1,0,0,0,216,217,1,0,0,0,217,219,1,0,0,
+        0,218,207,1,0,0,0,219,222,1,0,0,0,220,218,1,0,0,0,220,221,1,0,0,
+        0,221,231,1,0,0,0,222,220,1,0,0,0,223,225,5,16,0,0,224,226,5,5,0,
+        0,225,224,1,0,0,0,225,226,1,0,0,0,226,227,1,0,0,0,227,229,3,42,21,
+        0,228,230,5,6,0,0,229,228,1,0,0,0,229,230,1,0,0,0,230,232,1,0,0,
+        0,231,223,1,0,0,0,231,232,1,0,0,0,232,236,1,0,0,0,233,235,5,34,0,
+        0,234,233,1,0,0,0,235,238,1,0,0,0,236,234,1,0,0,0,236,237,1,0,0,
+        0,237,240,1,0,0,0,238,236,1,0,0,0,239,241,5,8,0,0,240,239,1,0,0,
+        0,240,241,1,0,0,0,241,47,1,0,0,0,242,246,3,42,21,0,243,246,3,46,
+        23,0,244,246,3,50,25,0,245,242,1,0,0,0,245,243,1,0,0,0,245,244,1,
+        0,0,0,246,49,1,0,0,0,247,248,5,3,0,0,248,249,5,28,0,0,249,250,3,
+        32,16,0,250,256,5,26,0,0,251,252,5,5,0,0,252,253,3,42,21,0,253,254,
+        5,6,0,0,254,255,5,8,0,0,255,257,1,0,0,0,256,251,1,0,0,0,256,257,
+        1,0,0,0,257,258,1,0,0,0,258,259,5,4,0,0,259,51,1,0,0,0,260,262,5,
+        5,0,0,261,260,1,0,0,0,261,262,1,0,0,0,262,264,1,0,0,0,263,265,3,
+        48,24,0,264,263,1,0,0,0,265,266,1,0,0,0,266,264,1,0,0,0,266,267,
+        1,0,0,0,267,269,1,0,0,0,268,270,5,6,0,0,269,268,1,0,0,0,269,270,
+        1,0,0,0,270,53,1,0,0,0,271,272,3,32,16,0,272,55,1,0,0,0,273,278,
+        3,54,27,0,274,275,5,25,0,0,275,277,3,54,27,0,276,274,1,0,0,0,277,
+        280,1,0,0,0,278,276,1,0,0,0,278,279,1,0,0,0,279,57,1,0,0,0,280,278,
+        1,0,0,0,281,282,3,8,4,0,282,284,5,3,0,0,283,285,3,56,28,0,284,283,
+        1,0,0,0,284,285,1,0,0,0,285,286,1,0,0,0,286,287,5,4,0,0,287,288,
+        5,7,0,0,288,289,3,10,5,0,289,290,5,5,0,0,290,291,3,52,26,0,291,292,
+        5,6,0,0,292,293,5,8,0,0,293,59,1,0,0,0,294,297,3,48,24,0,295,297,
+        3,58,29,0,296,294,1,0,0,0,296,295,1,0,0,0,297,61,1,0,0,0,34,65,71,
+        77,95,106,118,123,132,143,145,160,167,173,176,181,194,198,201,212,
+        216,220,225,229,231,236,240,245,256,261,266,269,278,284,296
     ]
 
 class YAPLGrammarParser ( Parser ):
@@ -145,35 +152,36 @@ class YAPLGrammarParser ( Parser ):
     RULE_methodName = 4
     RULE_type = 5
     RULE_variable = 6
-    RULE_parameterCall = 7
-    RULE_primaryExpression = 8
-    RULE_boolDeclaration = 9
-    RULE_expression = 10
-    RULE_arithmeticExpression = 11
-    RULE_boolExpression = 12
-    RULE_assignExpression = 13
-    RULE_uniqueMethod = 14
-    RULE_declaration = 15
-    RULE_newVarDeclaration = 16
-    RULE_varDeclaration = 17
-    RULE_letDeclaration = 18
-    RULE_methodCall = 19
-    RULE_statement = 20
-    RULE_assignStatement = 21
-    RULE_ifStatement = 22
-    RULE_statementList = 23
-    RULE_letExpression = 24
-    RULE_defineStatements = 25
-    RULE_formalParameter = 26
-    RULE_parameterList = 27
-    RULE_methodDeclaration = 28
-    RULE_feature = 29
+    RULE_operator = 7
+    RULE_parameterCall = 8
+    RULE_primaryExpression = 9
+    RULE_boolDeclaration = 10
+    RULE_expression = 11
+    RULE_arithmeticExpression = 12
+    RULE_boolExpression = 13
+    RULE_assignExpression = 14
+    RULE_uniqueMethod = 15
+    RULE_declaration = 16
+    RULE_newVarDeclaration = 17
+    RULE_varDeclaration = 18
+    RULE_letDeclaration = 19
+    RULE_methodCall = 20
+    RULE_statement = 21
+    RULE_assignStatement = 22
+    RULE_ifStatement = 23
+    RULE_statementList = 24
+    RULE_letExpression = 25
+    RULE_defineStatements = 26
+    RULE_formalParameter = 27
+    RULE_parameterList = 28
+    RULE_methodDeclaration = 29
+    RULE_feature = 30
 
     ruleNames =  [ "program", "classDeclaration", "className", "classNameParent", 
-                   "methodName", "type", "variable", "parameterCall", "primaryExpression", 
-                   "boolDeclaration", "expression", "arithmeticExpression", 
-                   "boolExpression", "assignExpression", "uniqueMethod", 
-                   "declaration", "newVarDeclaration", "varDeclaration", 
+                   "methodName", "type", "variable", "operator", "parameterCall", 
+                   "primaryExpression", "boolDeclaration", "expression", 
+                   "arithmeticExpression", "boolExpression", "assignExpression", 
+                   "uniqueMethod", "declaration", "newVarDeclaration", "varDeclaration", 
                    "letDeclaration", "methodCall", "statement", "assignStatement", 
                    "ifStatement", "statementList", "letExpression", "defineStatements", 
                    "formalParameter", "parameterList", "methodDeclaration", 
@@ -273,13 +281,13 @@ class YAPLGrammarParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 61 
+            self.state = 63 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
-                self.state = 60
+                self.state = 62
                 self.classDeclaration()
-                self.state = 63 
+                self.state = 65 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if not (_la==1):
@@ -358,35 +366,35 @@ class YAPLGrammarParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 65
+            self.state = 67
             self.match(YAPLGrammarParser.CLASS)
-            self.state = 66
+            self.state = 68
             self.className()
-            self.state = 69
+            self.state = 71
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==2:
-                self.state = 67
+                self.state = 69
                 self.match(YAPLGrammarParser.INHERITS)
-                self.state = 68
+                self.state = 70
                 self.classNameParent()
 
 
-            self.state = 71
+            self.state = 73
             self.match(YAPLGrammarParser.LBRACE)
-            self.state = 75
+            self.state = 77
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while (((_la) & ~0x3f) == 0 and ((1 << _la) & 247245856776) != 0):
-                self.state = 72
+                self.state = 74
                 self.feature()
-                self.state = 77
+                self.state = 79
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 78
+            self.state = 80
             self.match(YAPLGrammarParser.RBRACE)
-            self.state = 79
+            self.state = 81
             self.match(YAPLGrammarParser.SEMICOLON)
         except RecognitionException as re:
             localctx.exception = re
@@ -433,7 +441,7 @@ class YAPLGrammarParser ( Parser ):
         self.enterRule(localctx, 4, self.RULE_className)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 81
+            self.state = 83
             self.match(YAPLGrammarParser.IDENTIFIER)
         except RecognitionException as re:
             localctx.exception = re
@@ -480,7 +488,7 @@ class YAPLGrammarParser ( Parser ):
         self.enterRule(localctx, 6, self.RULE_classNameParent)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 83
+            self.state = 85
             self.match(YAPLGrammarParser.IDENTIFIER)
         except RecognitionException as re:
             localctx.exception = re
@@ -527,7 +535,7 @@ class YAPLGrammarParser ( Parser ):
         self.enterRule(localctx, 8, self.RULE_methodName)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 85
+            self.state = 87
             self.match(YAPLGrammarParser.IDENTIFIER)
         except RecognitionException as re:
             localctx.exception = re
@@ -589,37 +597,37 @@ class YAPLGrammarParser ( Parser ):
         localctx = YAPLGrammarParser.TypeContext(self, self._ctx, self.state)
         self.enterRule(localctx, 10, self.RULE_type)
         try:
-            self.state = 93
+            self.state = 95
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [10]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 87
+                self.state = 89
                 self.match(YAPLGrammarParser.INT)
                 pass
             elif token in [12]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 88
+                self.state = 90
                 self.match(YAPLGrammarParser.STRING)
                 pass
             elif token in [35]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 89
+                self.state = 91
                 self.className()
                 pass
             elif token in [13]:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 90
+                self.state = 92
                 self.match(YAPLGrammarParser.SELF)
                 pass
             elif token in [11]:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 91
+                self.state = 93
                 self.match(YAPLGrammarParser.BOOL)
                 pass
             elif token in [30]:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 92
+                self.state = 94
                 self.match(YAPLGrammarParser.OBJECT)
                 pass
             else:
@@ -670,8 +678,70 @@ class YAPLGrammarParser ( Parser ):
         self.enterRule(localctx, 12, self.RULE_variable)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 95
+            self.state = 97
             self.match(YAPLGrammarParser.LET)
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.exitRule()
+        return localctx
+
+
+    class OperatorContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+
+        def MINUS(self):
+            return self.getToken(YAPLGrammarParser.MINUS, 0)
+
+        def MULT(self):
+            return self.getToken(YAPLGrammarParser.MULT, 0)
+
+        def PLUS(self):
+            return self.getToken(YAPLGrammarParser.PLUS, 0)
+
+        def DIV(self):
+            return self.getToken(YAPLGrammarParser.DIV, 0)
+
+        def getRuleIndex(self):
+            return YAPLGrammarParser.RULE_operator
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterOperator" ):
+                listener.enterOperator(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitOperator" ):
+                listener.exitOperator(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitOperator" ):
+                return visitor.visitOperator(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+
+    def operator(self):
+
+        localctx = YAPLGrammarParser.OperatorContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 14, self.RULE_operator)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 99
+            _la = self._input.LA(1)
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 15728640) != 0)):
+                self._errHandler.recoverInline(self)
+            else:
+                self._errHandler.reportMatch(self)
+                self.consume()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -724,21 +794,21 @@ class YAPLGrammarParser ( Parser ):
     def parameterCall(self):
 
         localctx = YAPLGrammarParser.ParameterCallContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 14, self.RULE_parameterCall)
+        self.enterRule(localctx, 16, self.RULE_parameterCall)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 97
+            self.state = 101
             self.expression()
-            self.state = 102
+            self.state = 106
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==25:
-                self.state = 98
+                self.state = 102
                 self.match(YAPLGrammarParser.COMMA)
-                self.state = 99
+                self.state = 103
                 self.expression()
-                self.state = 104
+                self.state = 108
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -818,65 +888,65 @@ class YAPLGrammarParser ( Parser ):
     def primaryExpression(self):
 
         localctx = YAPLGrammarParser.PrimaryExpressionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 16, self.RULE_primaryExpression)
+        self.enterRule(localctx, 18, self.RULE_primaryExpression)
         self._la = 0 # Token type
         try:
-            self.state = 119
+            self.state = 123
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,6,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 105
+                self.state = 109
                 self.boolDeclaration()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 106
+                self.state = 110
                 self.match(YAPLGrammarParser.INT_LITERAL)
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 107
+                self.state = 111
                 self.match(YAPLGrammarParser.STRING_LITERAL)
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 108
+                self.state = 112
                 self.match(YAPLGrammarParser.IDENTIFIER)
                 pass
 
             elif la_ == 5:
                 self.enterOuterAlt(localctx, 5)
-                self.state = 109
+                self.state = 113
                 self.match(YAPLGrammarParser.NEW)
-                self.state = 110
+                self.state = 114
                 self.className()
                 pass
 
             elif la_ == 6:
                 self.enterOuterAlt(localctx, 6)
-                self.state = 111
+                self.state = 115
                 self.methodName()
-                self.state = 112
+                self.state = 116
                 self.match(YAPLGrammarParser.LPAREN)
-                self.state = 114
+                self.state = 118
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
-                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 246977404928) != 0):
-                    self.state = 113
+                if (((_la) & ~0x3f) == 0 and ((1 << _la) & 247245840384) != 0):
+                    self.state = 117
                     self.parameterCall()
 
 
-                self.state = 116
+                self.state = 120
                 self.match(YAPLGrammarParser.RPAREN)
                 pass
 
             elif la_ == 7:
                 self.enterOuterAlt(localctx, 7)
-                self.state = 118
+                self.state = 122
                 self.match(YAPLGrammarParser.SELF)
                 pass
 
@@ -926,11 +996,11 @@ class YAPLGrammarParser ( Parser ):
     def boolDeclaration(self):
 
         localctx = YAPLGrammarParser.BoolDeclarationContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 18, self.RULE_boolDeclaration)
+        self.enterRule(localctx, 20, self.RULE_boolDeclaration)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 121
+            self.state = 125
             _la = self._input.LA(1)
             if not(_la==31 or _la==32):
                 self._errHandler.recoverInline(self)
@@ -969,6 +1039,10 @@ class YAPLGrammarParser ( Parser ):
             return self.getTypedRuleContext(YAPLGrammarParser.UniqueMethodContext,0)
 
 
+        def assignStatement(self):
+            return self.getTypedRuleContext(YAPLGrammarParser.AssignStatementContext,0)
+
+
         def getRuleIndex(self):
             return YAPLGrammarParser.RULE_expression
 
@@ -992,33 +1066,39 @@ class YAPLGrammarParser ( Parser ):
     def expression(self):
 
         localctx = YAPLGrammarParser.ExpressionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 20, self.RULE_expression)
+        self.enterRule(localctx, 22, self.RULE_expression)
         try:
-            self.state = 127
+            self.state = 132
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 123
+                self.state = 127
                 self.primaryExpression()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 124
+                self.state = 128
                 self.arithmeticExpression()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 125
+                self.state = 129
                 self.methodCall()
                 pass
 
             elif la_ == 4:
                 self.enterOuterAlt(localctx, 4)
-                self.state = 126
+                self.state = 130
                 self.uniqueMethod()
+                pass
+
+            elif la_ == 5:
+                self.enterOuterAlt(localctx, 5)
+                self.state = 131
+                self.assignStatement()
                 pass
 
 
@@ -1045,17 +1125,29 @@ class YAPLGrammarParser ( Parser ):
                 return self.getTypedRuleContext(YAPLGrammarParser.PrimaryExpressionContext,i)
 
 
-        def MINUS(self):
-            return self.getToken(YAPLGrammarParser.MINUS, 0)
+        def MINUS(self, i:int=None):
+            if i is None:
+                return self.getTokens(YAPLGrammarParser.MINUS)
+            else:
+                return self.getToken(YAPLGrammarParser.MINUS, i)
 
-        def MULT(self):
-            return self.getToken(YAPLGrammarParser.MULT, 0)
+        def MULT(self, i:int=None):
+            if i is None:
+                return self.getTokens(YAPLGrammarParser.MULT)
+            else:
+                return self.getToken(YAPLGrammarParser.MULT, i)
 
-        def PLUS(self):
-            return self.getToken(YAPLGrammarParser.PLUS, 0)
+        def PLUS(self, i:int=None):
+            if i is None:
+                return self.getTokens(YAPLGrammarParser.PLUS)
+            else:
+                return self.getToken(YAPLGrammarParser.PLUS, i)
 
-        def DIV(self):
-            return self.getToken(YAPLGrammarParser.DIV, 0)
+        def DIV(self, i:int=None):
+            if i is None:
+                return self.getTokens(YAPLGrammarParser.DIV)
+            else:
+                return self.getToken(YAPLGrammarParser.DIV, i)
 
         def getRuleIndex(self):
             return YAPLGrammarParser.RULE_arithmeticExpression
@@ -1080,21 +1172,50 @@ class YAPLGrammarParser ( Parser ):
     def arithmeticExpression(self):
 
         localctx = YAPLGrammarParser.ArithmeticExpressionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 22, self.RULE_arithmeticExpression)
+        self.enterRule(localctx, 24, self.RULE_arithmeticExpression)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 129
+            self.state = 134
             self.primaryExpression()
-            self.state = 130
+            self.state = 145
+            self._errHandler.sync(self)
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 15728640) != 0)):
-                self._errHandler.recoverInline(self)
-            else:
-                self._errHandler.reportMatch(self)
-                self.consume()
-            self.state = 131
-            self.primaryExpression()
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 15728640) != 0):
+                self.state = 143
+                self._errHandler.sync(self)
+                token = self._input.LA(1)
+                if token in [20]:
+                    self.state = 135
+                    self.match(YAPLGrammarParser.MINUS)
+                    self.state = 136
+                    self.primaryExpression()
+                    pass
+                elif token in [22]:
+                    self.state = 137
+                    self.match(YAPLGrammarParser.MULT)
+                    self.state = 138
+                    self.primaryExpression()
+                    pass
+                elif token in [21]:
+                    self.state = 139
+                    self.match(YAPLGrammarParser.PLUS)
+                    self.state = 140
+                    self.primaryExpression()
+                    pass
+                elif token in [23]:
+                    self.state = 141
+                    self.match(YAPLGrammarParser.DIV)
+                    self.state = 142
+                    self.primaryExpression()
+                    pass
+                else:
+                    raise NoViableAltException(self)
+
+                self.state = 147
+                self._errHandler.sync(self)
+                _la = self._input.LA(1)
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1150,20 +1271,20 @@ class YAPLGrammarParser ( Parser ):
     def boolExpression(self):
 
         localctx = YAPLGrammarParser.BoolExpressionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 24, self.RULE_boolExpression)
+        self.enterRule(localctx, 26, self.RULE_boolExpression)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 133
+            self.state = 148
             self.primaryExpression()
-            self.state = 134
+            self.state = 149
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 917504) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
                 self.consume()
-            self.state = 135
+            self.state = 150
             self.primaryExpression()
         except RecognitionException as re:
             localctx.exception = re
@@ -1211,12 +1332,12 @@ class YAPLGrammarParser ( Parser ):
     def assignExpression(self):
 
         localctx = YAPLGrammarParser.AssignExpressionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 26, self.RULE_assignExpression)
+        self.enterRule(localctx, 28, self.RULE_assignExpression)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 137
+            self.state = 152
             self.match(YAPLGrammarParser.ASSIGN)
-            self.state = 138
+            self.state = 153
             self.expression()
         except RecognitionException as re:
             localctx.exception = re
@@ -1267,14 +1388,14 @@ class YAPLGrammarParser ( Parser ):
     def uniqueMethod(self):
 
         localctx = YAPLGrammarParser.UniqueMethodContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 28, self.RULE_uniqueMethod)
+        self.enterRule(localctx, 30, self.RULE_uniqueMethod)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 140
+            self.state = 155
             self.methodName()
-            self.state = 141
+            self.state = 156
             self.match(YAPLGrammarParser.LPAREN)
-            self.state = 142
+            self.state = 157
             self.match(YAPLGrammarParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
@@ -1328,23 +1449,23 @@ class YAPLGrammarParser ( Parser ):
     def declaration(self):
 
         localctx = YAPLGrammarParser.DeclarationContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 30, self.RULE_declaration)
+        self.enterRule(localctx, 32, self.RULE_declaration)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 145
+            self.state = 160
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==28:
-                self.state = 144
+                self.state = 159
                 self.match(YAPLGrammarParser.LET)
 
 
-            self.state = 147
+            self.state = 162
             self.match(YAPLGrammarParser.IDENTIFIER)
-            self.state = 148
+            self.state = 163
             self.match(YAPLGrammarParser.COLON)
-            self.state = 149
+            self.state = 164
             self.type_()
         except RecognitionException as re:
             localctx.exception = re
@@ -1362,9 +1483,18 @@ class YAPLGrammarParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def declaration(self):
-            return self.getTypedRuleContext(YAPLGrammarParser.DeclarationContext,0)
+        def IDENTIFIER(self):
+            return self.getToken(YAPLGrammarParser.IDENTIFIER, 0)
 
+        def COLON(self):
+            return self.getToken(YAPLGrammarParser.COLON, 0)
+
+        def type_(self):
+            return self.getTypedRuleContext(YAPLGrammarParser.TypeContext,0)
+
+
+        def LET(self):
+            return self.getToken(YAPLGrammarParser.LET, 0)
 
         def assignExpression(self):
             return self.getTypedRuleContext(YAPLGrammarParser.AssignExpressionContext,0)
@@ -1396,25 +1526,37 @@ class YAPLGrammarParser ( Parser ):
     def newVarDeclaration(self):
 
         localctx = YAPLGrammarParser.NewVarDeclarationContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 32, self.RULE_newVarDeclaration)
+        self.enterRule(localctx, 34, self.RULE_newVarDeclaration)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 151
-            self.declaration()
-            self.state = 153
+            self.state = 167
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if _la==28:
+                self.state = 166
+                self.match(YAPLGrammarParser.LET)
+
+
+            self.state = 169
+            self.match(YAPLGrammarParser.IDENTIFIER)
+            self.state = 170
+            self.match(YAPLGrammarParser.COLON)
+            self.state = 171
+            self.type_()
+            self.state = 173
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==9:
-                self.state = 152
+                self.state = 172
                 self.assignExpression()
 
 
-            self.state = 156
+            self.state = 176
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,10,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,13,self._ctx)
             if la_ == 1:
-                self.state = 155
+                self.state = 175
                 self.match(YAPLGrammarParser.SEMICOLON)
 
 
@@ -1467,18 +1609,18 @@ class YAPLGrammarParser ( Parser ):
     def varDeclaration(self):
 
         localctx = YAPLGrammarParser.VarDeclarationContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 34, self.RULE_varDeclaration)
+        self.enterRule(localctx, 36, self.RULE_varDeclaration)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 158
+            self.state = 178
             self.match(YAPLGrammarParser.IDENTIFIER)
-            self.state = 159
+            self.state = 179
             self.assignExpression()
-            self.state = 161
+            self.state = 181
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,11,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,14,self._ctx)
             if la_ == 1:
-                self.state = 160
+                self.state = 180
                 self.match(YAPLGrammarParser.SEMICOLON)
 
 
@@ -1535,16 +1677,16 @@ class YAPLGrammarParser ( Parser ):
     def letDeclaration(self):
 
         localctx = YAPLGrammarParser.LetDeclarationContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 36, self.RULE_letDeclaration)
+        self.enterRule(localctx, 38, self.RULE_letDeclaration)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 163
+            self.state = 183
             self.match(YAPLGrammarParser.LET)
-            self.state = 164
+            self.state = 184
             self.declaration()
-            self.state = 165
+            self.state = 185
             self.match(YAPLGrammarParser.IN)
-            self.state = 166
+            self.state = 186
             self.statementList()
         except RecognitionException as re:
             localctx.exception = re
@@ -1595,14 +1737,14 @@ class YAPLGrammarParser ( Parser ):
     def methodCall(self):
 
         localctx = YAPLGrammarParser.MethodCallContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 38, self.RULE_methodCall)
+        self.enterRule(localctx, 40, self.RULE_methodCall)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 168
+            self.state = 188
             self.match(YAPLGrammarParser.IDENTIFIER)
-            self.state = 169
+            self.state = 189
             self.match(YAPLGrammarParser.DOT)
-            self.state = 170
+            self.state = 190
             self.primaryExpression()
         except RecognitionException as re:
             localctx.exception = re
@@ -1619,10 +1761,6 @@ class YAPLGrammarParser ( Parser ):
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
-
-        def assignStatement(self):
-            return self.getTypedRuleContext(YAPLGrammarParser.AssignStatementContext,0)
-
 
         def expression(self):
             return self.getTypedRuleContext(YAPLGrammarParser.ExpressionContext,0)
@@ -1654,28 +1792,16 @@ class YAPLGrammarParser ( Parser ):
     def statement(self):
 
         localctx = YAPLGrammarParser.StatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 40, self.RULE_statement)
+        self.enterRule(localctx, 42, self.RULE_statement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 174
+            self.state = 192
+            self.expression()
+            self.state = 194
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,12,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,15,self._ctx)
             if la_ == 1:
-                self.state = 172
-                self.assignStatement()
-                pass
-
-            elif la_ == 2:
-                self.state = 173
-                self.expression()
-                pass
-
-
-            self.state = 177
-            self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,13,self._ctx)
-            if la_ == 1:
-                self.state = 176
+                self.state = 193
                 self.match(YAPLGrammarParser.SEMICOLON)
 
 
@@ -1726,20 +1852,20 @@ class YAPLGrammarParser ( Parser ):
     def assignStatement(self):
 
         localctx = YAPLGrammarParser.AssignStatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 42, self.RULE_assignStatement)
+        self.enterRule(localctx, 44, self.RULE_assignStatement)
         try:
-            self.state = 181
+            self.state = 198
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,14,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,16,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 179
+                self.state = 196
                 self.newVarDeclaration()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 180
+                self.state = 197
                 self.varDeclaration()
                 pass
 
@@ -1839,102 +1965,102 @@ class YAPLGrammarParser ( Parser ):
     def ifStatement(self):
 
         localctx = YAPLGrammarParser.IfStatementContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 44, self.RULE_ifStatement)
+        self.enterRule(localctx, 46, self.RULE_ifStatement)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 184
+            self.state = 201
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==28:
-                self.state = 183
+                self.state = 200
                 self.match(YAPLGrammarParser.LET)
 
 
-            self.state = 186
-            self.match(YAPLGrammarParser.IF)
-            self.state = 187
-            self.boolExpression()
-            self.state = 188
-            self.match(YAPLGrammarParser.THEN)
-            self.state = 189
-            self.statement()
             self.state = 203
+            self.match(YAPLGrammarParser.IF)
+            self.state = 204
+            self.boolExpression()
+            self.state = 205
+            self.match(YAPLGrammarParser.THEN)
+            self.state = 206
+            self.statement()
+            self.state = 220
             self._errHandler.sync(self)
-            _alt = self._interp.adaptivePredict(self._input,18,self._ctx)
+            _alt = self._interp.adaptivePredict(self._input,20,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
-                    self.state = 190
+                    self.state = 207
                     self.match(YAPLGrammarParser.ELSE)
-                    self.state = 191
+                    self.state = 208
                     self.match(YAPLGrammarParser.IF)
-                    self.state = 192
+                    self.state = 209
                     self.boolExpression()
-                    self.state = 193
+                    self.state = 210
                     self.match(YAPLGrammarParser.THEN)
-                    self.state = 195
+                    self.state = 212
                     self._errHandler.sync(self)
                     _la = self._input.LA(1)
                     if _la==5:
-                        self.state = 194
+                        self.state = 211
                         self.match(YAPLGrammarParser.LBRACE)
 
 
-                    self.state = 197
+                    self.state = 214
                     self.statement()
-                    self.state = 199
+                    self.state = 216
                     self._errHandler.sync(self)
-                    la_ = self._interp.adaptivePredict(self._input,17,self._ctx)
+                    la_ = self._interp.adaptivePredict(self._input,19,self._ctx)
                     if la_ == 1:
-                        self.state = 198
+                        self.state = 215
                         self.match(YAPLGrammarParser.RBRACE)
 
              
-                self.state = 205
+                self.state = 222
                 self._errHandler.sync(self)
-                _alt = self._interp.adaptivePredict(self._input,18,self._ctx)
+                _alt = self._interp.adaptivePredict(self._input,20,self._ctx)
 
-            self.state = 214
+            self.state = 231
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==16:
-                self.state = 206
+                self.state = 223
                 self.match(YAPLGrammarParser.ELSE)
-                self.state = 208
+                self.state = 225
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if _la==5:
-                    self.state = 207
+                    self.state = 224
                     self.match(YAPLGrammarParser.LBRACE)
 
 
-                self.state = 210
+                self.state = 227
                 self.statement()
-                self.state = 212
+                self.state = 229
                 self._errHandler.sync(self)
-                la_ = self._interp.adaptivePredict(self._input,20,self._ctx)
+                la_ = self._interp.adaptivePredict(self._input,22,self._ctx)
                 if la_ == 1:
-                    self.state = 211
+                    self.state = 228
                     self.match(YAPLGrammarParser.RBRACE)
 
 
 
 
-            self.state = 219
+            self.state = 236
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==34:
-                self.state = 216
+                self.state = 233
                 self.match(YAPLGrammarParser.FI)
-                self.state = 221
+                self.state = 238
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 223
+            self.state = 240
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==8:
-                self.state = 222
+                self.state = 239
                 self.match(YAPLGrammarParser.SEMICOLON)
 
 
@@ -1989,26 +2115,26 @@ class YAPLGrammarParser ( Parser ):
     def statementList(self):
 
         localctx = YAPLGrammarParser.StatementListContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 46, self.RULE_statementList)
+        self.enterRule(localctx, 48, self.RULE_statementList)
         try:
-            self.state = 228
+            self.state = 245
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,24,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,26,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 225
+                self.state = 242
                 self.statement()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 226
+                self.state = 243
                 self.ifStatement()
                 pass
 
             elif la_ == 3:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 227
+                self.state = 244
                 self.letExpression()
                 pass
 
@@ -2081,33 +2207,33 @@ class YAPLGrammarParser ( Parser ):
     def letExpression(self):
 
         localctx = YAPLGrammarParser.LetExpressionContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 48, self.RULE_letExpression)
+        self.enterRule(localctx, 50, self.RULE_letExpression)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 230
+            self.state = 247
             self.match(YAPLGrammarParser.LPAREN)
-            self.state = 231
+            self.state = 248
             self.match(YAPLGrammarParser.LET)
-            self.state = 232
+            self.state = 249
             self.declaration()
-            self.state = 233
+            self.state = 250
             self.match(YAPLGrammarParser.IN)
-            self.state = 239
+            self.state = 256
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==5:
-                self.state = 234
+                self.state = 251
                 self.match(YAPLGrammarParser.LBRACE)
-                self.state = 235
+                self.state = 252
                 self.statement()
-                self.state = 236
+                self.state = 253
                 self.match(YAPLGrammarParser.RBRACE)
-                self.state = 237
+                self.state = 254
                 self.match(YAPLGrammarParser.SEMICOLON)
 
 
-            self.state = 241
+            self.state = 258
             self.match(YAPLGrammarParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
@@ -2161,35 +2287,35 @@ class YAPLGrammarParser ( Parser ):
     def defineStatements(self):
 
         localctx = YAPLGrammarParser.DefineStatementsContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 50, self.RULE_defineStatements)
+        self.enterRule(localctx, 52, self.RULE_defineStatements)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 244
+            self.state = 261
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==5:
-                self.state = 243
+                self.state = 260
                 self.match(YAPLGrammarParser.LBRACE)
 
 
-            self.state = 247 
+            self.state = 264 
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while True:
-                self.state = 246
+                self.state = 263
                 self.statementList()
-                self.state = 249 
+                self.state = 266 
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
                 if not ((((_la) & ~0x3f) == 0 and ((1 << _la) & 247245856776) != 0)):
                     break
 
-            self.state = 252
+            self.state = 269
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,28,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,30,self._ctx)
             if la_ == 1:
-                self.state = 251
+                self.state = 268
                 self.match(YAPLGrammarParser.RBRACE)
 
 
@@ -2236,10 +2362,10 @@ class YAPLGrammarParser ( Parser ):
     def formalParameter(self):
 
         localctx = YAPLGrammarParser.FormalParameterContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 52, self.RULE_formalParameter)
+        self.enterRule(localctx, 54, self.RULE_formalParameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 254
+            self.state = 271
             self.declaration()
         except RecognitionException as re:
             localctx.exception = re
@@ -2293,21 +2419,21 @@ class YAPLGrammarParser ( Parser ):
     def parameterList(self):
 
         localctx = YAPLGrammarParser.ParameterListContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 54, self.RULE_parameterList)
+        self.enterRule(localctx, 56, self.RULE_parameterList)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 256
+            self.state = 273
             self.formalParameter()
-            self.state = 261
+            self.state = 278
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==25:
-                self.state = 257
+                self.state = 274
                 self.match(YAPLGrammarParser.COMMA)
-                self.state = 258
+                self.state = 275
                 self.formalParameter()
-                self.state = 263
+                self.state = 280
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -2384,35 +2510,35 @@ class YAPLGrammarParser ( Parser ):
     def methodDeclaration(self):
 
         localctx = YAPLGrammarParser.MethodDeclarationContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 56, self.RULE_methodDeclaration)
+        self.enterRule(localctx, 58, self.RULE_methodDeclaration)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 264
+            self.state = 281
             self.methodName()
-            self.state = 265
+            self.state = 282
             self.match(YAPLGrammarParser.LPAREN)
-            self.state = 267
+            self.state = 284
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==28 or _la==35:
-                self.state = 266
+                self.state = 283
                 self.parameterList()
 
 
-            self.state = 269
+            self.state = 286
             self.match(YAPLGrammarParser.RPAREN)
-            self.state = 270
+            self.state = 287
             self.match(YAPLGrammarParser.COLON)
-            self.state = 271
+            self.state = 288
             self.type_()
-            self.state = 272
+            self.state = 289
             self.match(YAPLGrammarParser.LBRACE)
-            self.state = 273
+            self.state = 290
             self.defineStatements()
-            self.state = 274
+            self.state = 291
             self.match(YAPLGrammarParser.RBRACE)
-            self.state = 275
+            self.state = 292
             self.match(YAPLGrammarParser.SEMICOLON)
         except RecognitionException as re:
             localctx.exception = re
@@ -2461,20 +2587,20 @@ class YAPLGrammarParser ( Parser ):
     def feature(self):
 
         localctx = YAPLGrammarParser.FeatureContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 58, self.RULE_feature)
+        self.enterRule(localctx, 60, self.RULE_feature)
         try:
-            self.state = 279
+            self.state = 296
             self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,31,self._ctx)
+            la_ = self._interp.adaptivePredict(self._input,33,self._ctx)
             if la_ == 1:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 277
+                self.state = 294
                 self.statementList()
                 pass
 
             elif la_ == 2:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 278
+                self.state = 295
                 self.methodDeclaration()
                 pass
 

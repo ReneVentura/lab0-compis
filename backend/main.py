@@ -14,20 +14,23 @@ CORS(app)
 
 
 
-@app.route("/getcode", methods= ['POST', 'GET'])
+@app.route("/getcode", methods=['POST', 'GET'])
 def get_code():
-   
-    
     data = request.json
-    
     code = data.get("text")
-    tree , compiled_answer = compile(code)
-    answer = {
-        
-        "compiled_answer": compiled_answer
-        }
-    
-    return jsonify(answer) 
+
+    # Compile the code and get the result tuple containing formatted_tree, symbol_table, and mips_assembly
+    result = compile(code)
+
+    # Return the result as a JSON response
+    response = {
+        "formatted_tree": result[0],
+        "symbol_table": result[1],
+        "mips_assembly": result[2]
+    }
+
+    return jsonify(response)
+
 
 
 

@@ -24,7 +24,7 @@ MINUS: '-';
 PLUS: '+';
 MULT: '*';
 DIV: '/';
-NEW: 'new';
+NEW: 'new'; q
 COMMA: ',';
 IN: 'in';
 DOT: '.';

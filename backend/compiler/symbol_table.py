@@ -518,15 +518,15 @@ def format_tree(node, indent=""):
 def compile(code):
     tree, symbol_table, intermediate_code = parse_code(code)
     formatted_tree = format_tree(tree, indent="  ")
-  #  print(formatted_tree)
+    #  print(formatted_tree)
     print("\nTabla de Símbolos:")
     for symbol_name, symbol_type in symbol_table.items():
         print(f"{symbol_name}: {symbol_type}")
     mips_assembly = generate_mips_code(intermediate_code)
 
-# Imprime el código MIPS resultante
-    print(mips_assembly)
-    return formatted_tree, symbol_table
+    # Return formatted_tree, symbol_table, and MIPS assembly as a tuple
+    return formatted_tree, symbol_table, mips_assembly
+
 
 code = """
 class MyClass {

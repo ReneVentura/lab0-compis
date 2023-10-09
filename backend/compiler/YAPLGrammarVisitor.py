@@ -44,6 +44,11 @@ class YAPLGrammarVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by YAPLGrammarParser#operator.
+    def visitOperator(self, ctx:YAPLGrammarParser.OperatorContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by YAPLGrammarParser#parameterCall.
     def visitParameterCall(self, ctx:YAPLGrammarParser.ParameterCallContext):
         return self.visitChildren(ctx)

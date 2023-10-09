@@ -71,6 +71,15 @@ class YAPLGrammarListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by YAPLGrammarParser#operator.
+    def enterOperator(self, ctx:YAPLGrammarParser.OperatorContext):
+        pass
+
+    # Exit a parse tree produced by YAPLGrammarParser#operator.
+    def exitOperator(self, ctx:YAPLGrammarParser.OperatorContext):
+        pass
+
+
     # Enter a parse tree produced by YAPLGrammarParser#parameterCall.
     def enterParameterCall(self, ctx:YAPLGrammarParser.ParameterCallContext):
         pass
