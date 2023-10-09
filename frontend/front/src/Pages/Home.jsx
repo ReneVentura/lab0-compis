@@ -6,6 +6,7 @@ import axios from 'axios';
 const Home = () => {
   const backgroundImage = bg;
   const [inputText, setInputText] = useState('');
+  const [mipsAssembly, setMipsAssembly] = useState('');
 
   const handleInputChange = (event) => {
     setInputText(event.target.value);
@@ -26,7 +27,12 @@ const Home = () => {
         res.formatted_tree = cleanedFormattedTree;
 
         console.log(res);
-        setInputText(JSON.stringify(res, null, 2));
+
+        // Update the first textbox with formatted_tree and symbol_table
+        setInputText(JSON.stringify({ formatted_tree: res.formatted_tree, symbol_table: res.symbol_table }, null, 2));
+
+        // Update the second textbox with mips_assembly
+        setMipsAssembly(res.mips_assembly.join('\n'));
       })
       .catch((error) => {
         if (error.response) {
@@ -85,7 +91,7 @@ const Home = () => {
 
             <div className="mt-36 w-11/12 bg-gray-400 h-screen pb-10 flex flex-col items-center justify-center">
               <textarea
-                className="bg-white mt-20 w-10/12 h-5/6 p-5 font-text"
+                className="bg-white mt-20 w-10/12 h-screen p-5 font-text"
                 value={inputText}
                 onChange={handleInputChange}
                 style={{ fontVariantLigatures: 'none' }}
@@ -103,6 +109,16 @@ const Home = () => {
               >
                 Probar
               </button>
+            </div>
+
+            <div className="mt-5 w-10/12 bg-white p-5 font-text">
+              <h2>MIPS Assembly:</h2>
+              <textarea
+                className="bg-white w-full h-96 p-5"
+                value={mipsAssembly}
+                readOnly
+                style={{ fontVariantLigatures: 'none' }}
+              ></textarea>
             </div>
           </div>
           <h1 className="text-white text-4xl font-text mt-40 ">
