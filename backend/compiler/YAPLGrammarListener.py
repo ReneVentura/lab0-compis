@@ -1,6 +1,6 @@
-# Generated from YAPLGrammar.g4 by ANTLR 4.13.1
+# Generated from YAPLGrammar.g4 by ANTLR 4.7.2
 from antlr4 import *
-if "." in __name__:
+if __name__ is not None and "." in __name__:
     from .YAPLGrammarParser import YAPLGrammarParser
 else:
     from YAPLGrammarParser import YAPLGrammarParser
@@ -68,6 +68,24 @@ class YAPLGrammarListener(ParseTreeListener):
 
     # Exit a parse tree produced by YAPLGrammarParser#variable.
     def exitVariable(self, ctx:YAPLGrammarParser.VariableContext):
+        pass
+
+
+    # Enter a parse tree produced by YAPLGrammarParser#arithmeticOperator.
+    def enterArithmeticOperator(self, ctx:YAPLGrammarParser.ArithmeticOperatorContext):
+        pass
+
+    # Exit a parse tree produced by YAPLGrammarParser#arithmeticOperator.
+    def exitArithmeticOperator(self, ctx:YAPLGrammarParser.ArithmeticOperatorContext):
+        pass
+
+
+    # Enter a parse tree produced by YAPLGrammarParser#boolOperator.
+    def enterBoolOperator(self, ctx:YAPLGrammarParser.BoolOperatorContext):
+        pass
+
+    # Exit a parse tree produced by YAPLGrammarParser#boolOperator.
+    def exitBoolOperator(self, ctx:YAPLGrammarParser.BoolOperatorContext):
         pass
 
 
@@ -278,5 +296,3 @@ class YAPLGrammarListener(ParseTreeListener):
         pass
 
 
-
-del YAPLGrammarParser

@@ -54,13 +54,15 @@ classNameParent: IDENTIFIER;
 methodName: IDENTIFIER;
 type: INT | STRING | className | SELF | BOOL | OBJECT ;
 variable: LET ;
+arithmeticOperator: MINUS | MULT | PLUS | DIV;
+boolOperator: EQUALS | LESS_THAN | GREAT_THAN;
 
 parameterCall: expression (COMMA expression)*;
 primaryExpression: boolDeclaration | INT_LITERAL | STRING_LITERAL | IDENTIFIER | NEW className | methodName LPAREN parameterCall? RPAREN | SELF;
 boolDeclaration: TRUE | FALSE;
 expression: primaryExpression | arithmeticExpression | methodCall | uniqueMethod;
-arithmeticExpression: primaryExpression (MINUS | MULT | PLUS | DIV) primaryExpression;
-boolExpression: primaryExpression (EQUALS | LESS_THAN | GREAT_THAN ) primaryExpression;
+arithmeticExpression: primaryExpression arithmeticOperator primaryExpression;
+boolExpression: primaryExpression boolOperator primaryExpression;
 assignExpression: ASSIGN expression;
 uniqueMethod: methodName LPAREN RPAREN;
 declaration: LET? IDENTIFIER COLON type ;

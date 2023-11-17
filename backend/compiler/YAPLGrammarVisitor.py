@@ -1,6 +1,6 @@
-# Generated from YAPLGrammar.g4 by ANTLR 4.13.1
+# Generated from YAPLGrammar.g4 by ANTLR 4.7.2
 from antlr4 import *
-if "." in __name__:
+if __name__ is not None and "." in __name__:
     from .YAPLGrammarParser import YAPLGrammarParser
 else:
     from YAPLGrammarParser import YAPLGrammarParser
@@ -41,6 +41,16 @@ class YAPLGrammarVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by YAPLGrammarParser#variable.
     def visitVariable(self, ctx:YAPLGrammarParser.VariableContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by YAPLGrammarParser#arithmeticOperator.
+    def visitArithmeticOperator(self, ctx:YAPLGrammarParser.ArithmeticOperatorContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by YAPLGrammarParser#boolOperator.
+    def visitBoolOperator(self, ctx:YAPLGrammarParser.BoolOperatorContext):
         return self.visitChildren(ctx)
 
 

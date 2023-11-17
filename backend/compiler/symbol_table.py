@@ -3,6 +3,7 @@ from antlr4 import *
 from YAPLGrammarLexer import YAPLGrammarLexer
 from YAPLGrammarParser import YAPLGrammarParser
 from YAPLGrammarVisitor import YAPLGrammarVisitor
+from tac import TACGeneratorVisitor
 
 class SemanticAnalyzerVisitor(YAPLGrammarVisitor):
     def __init__(self):
@@ -97,6 +98,10 @@ def parse_code(code):
 
     visitor = SemanticAnalyzerVisitor()
     visitor.visit(tree)
+    tacCoder = TACGeneratorVisitor()
+    tactree = parser.program()
+    visitor.visit(tree)
+
 
     return tree, visitor.symbol_table
 
