@@ -1,8 +1,8 @@
 from YAPLGrammarVisitor import YAPLGrammarVisitor
 from YAPLGrammarParser import YAPLGrammarParser
-from backend.compiler.YAPLGrammarParser import YAPLGrammarParser
+# from YAPLGrammarParser import YAPLGrammarParser
 
-class TACGeneratorVisitor:
+class TACGeneratorVisitor(YAPLGrammarVisitor):
     def __init__(self):
         self.tac = ""
         self.temp_counter = 0
@@ -14,9 +14,10 @@ class TACGeneratorVisitor:
 
     def visitClassDeclaration(self, ctx:YAPLGrammarParser.ClassDeclarationContext):
         ptac = ""
-        classname = ctx.className.getText()
-        if ctx.classNameParent != None:
-            classname += ":" + ctx.classNameParent.getText()
+        print(type(ctx.className))
+        classname = ctx.className().getText()
+        if ctx.classNameParent() != None:
+            classname += ":" + ctx.classNameParent().getText()
         ptac += "class " + classname + ":\n beginClass;\n"
         for feature in ctx.feature():
             ptac += self.visitFeature(feature)
@@ -67,7 +68,9 @@ class TACGeneratorVisitor:
     def visitStatementList(self, ctx:YAPLGrammarParser.StatementListContext):
         ptac = ""
         if ctx.statement != None:
-            ptac += self.visitStatement(ctx.state)
+            print(ctx.statement().getText())
+            ptac += self.visitStatement(ctx.statement)
+            
         elif ctx.ifStatement() != None:
             ptac += self.visitIfStatement(ctx.ifStatement())
         elif ctx.letExpression() != None:
@@ -75,6 +78,8 @@ class TACGeneratorVisitor:
         return ptac
     
     def visitStatement(self, ctx:YAPLGrammarParser.StatementContext):
+        print("tipo-----------------")
+        print( hasattr(ctx, 'assignStatement'))  # Check the type of ctx
         if ctx.assignStatement() != None:
             return self.visitAssignStatement(ctx.assignStatement())
         elif ctx.expression() != None:
@@ -188,6 +193,7 @@ class TACGeneratorVisitor:
     def visitElseStatement(self, ctx:YAPLGrammarParser.ElseStatementContext):
         ptac = ""
         ptac += self.visitStatement(ctx.statement())
+        print("visita")
         return ptac
 
     def visitBoolExpression(self, ctx:YAPLGrammarParser.BoolExpressionContext):

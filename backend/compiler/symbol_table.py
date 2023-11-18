@@ -42,6 +42,7 @@ class SemanticAnalyzerVisitor(YAPLGrammarVisitor):
             }
 
     def visitClassDeclaration(self, ctx: YAPLGrammarParser.ClassDeclarationContext):
+        print(type(ctx.className))
         class_name = ctx.className().getText()
         self.current_class = class_name
 
@@ -89,7 +90,8 @@ class SemanticAnalyzerVisitor(YAPLGrammarVisitor):
                 current_class = None
 
         raise ValueError(f"Method '{method_name}' not defined in class '{class_name}' or its ancestors.")
-
+    def visitStatement(self, ctx:YAPLGrammarParser.StatementContext):
+        print(print( hasattr(ctx, 'assignStatement')))
 def parse_code(code):
     lexer = YAPLGrammarLexer(InputStream(code))
     stream = CommonTokenStream(lexer)
@@ -100,10 +102,11 @@ def parse_code(code):
     visitor.visit(tree)
     tacCoder = TACGeneratorVisitor()
     tactree = parser.program()
-    visitor.visit(tree)
+    tacCoder.visitProgram(tree)
+    
 
 
-    return tree, visitor.symbol_table
+    return tree, visitor.symbol_table, tactree
 
 def format_tree(node, indent=""):
     if isinstance(node, TerminalNode):
@@ -115,9 +118,9 @@ def format_tree(node, indent=""):
     return result
 
 def compile(code):
-    tree, symbol_table = parse_code(code)
+    tree, symbol_table, tac = parse_code(code)
     formatted_tree = format_tree(tree, indent="  ")
-
+    print(tac)
     print("\nTabla de Símbolos:")
     for symbol_name, symbol_type in symbol_table.items():
         print(f"{symbol_name}: {symbol_type}")
